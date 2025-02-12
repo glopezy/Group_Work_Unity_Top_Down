@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &293286336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 1103326916}
   - component: {fileID: 1103326919}
   - component: {fileID: 1103326918}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15930,7 +15930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1593706677}
   - component: {fileID: 1593706678}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: House1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16013,7 +16013,7 @@ GameObject:
   - component: {fileID: 1613435267}
   - component: {fileID: 1613435269}
   - component: {fileID: 1613435268}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Town1_Waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
