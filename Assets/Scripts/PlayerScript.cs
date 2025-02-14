@@ -62,7 +62,7 @@ public class PlayerScript : MonoBehaviour
         //animator.SetFloat("LastInputY", animator.GetFloat("InputY"));
 
         ////velocidad y floats direccionales actuales para el animador
-        //rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
+        rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
         //animator.SetFloat("InputX", horizontal);
         //animator.SetFloat("InputY", vertical);
 

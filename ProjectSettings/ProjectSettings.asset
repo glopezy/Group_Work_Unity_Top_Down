@@ -695,8 +695,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Group_Work_Unity_Top_Down
-  metroPackageVersion: 
+  metroPackageName: GroupWorkUnityTopDown
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -704,7 +704,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Group_Work_Unity_Top_Down
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Group_Work_Unity_Top_Down
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
