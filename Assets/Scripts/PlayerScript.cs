@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D collider;
     private Animator animator;
+    [SerializeField] private InteractionDetectorScript interactionDetector;
 
     private float horizontal;
     private float vertical;
@@ -27,6 +28,12 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         Move();
+
+        //boton interactuar
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            interactionDetector.OnInteract();
+        }
 
     }
 
