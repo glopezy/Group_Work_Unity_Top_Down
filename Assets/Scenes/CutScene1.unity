@@ -501,7 +501,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 24429ce75fed72a40a8eb39a001d8298, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b623691716f1113419dd43f6a1113afb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapBoundaries: {fileID: 1987679777}
-  direction: 0
+  moveSpot: {fileID: 0}
 --- !u!1 &908458846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,16 +1034,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1bbf9a9d9ec664ea995f2032238ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
   tmpProText: {fileID: 908458849}
   delayBeforeStart: 8
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
   startOnEnable: 1
-  clearAtStart: 0
-  startOnCollision: 0
-  collisionExitOptions: 0
 --- !u!114 &908458849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1215,7 +1211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapBoundaries: {fileID: 2127159021}
-  direction: 1
+  moveSpot: {fileID: 0}
 --- !u!61 &909500241
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12570,6 +12566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4130986f73d30fb488049f675ab58ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionDetector: {fileID: 0}
   moveSpeed: 5
 --- !u!61 &1275809765
 BoxCollider2D:
