@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InteractionDetectorScript : MonoBehaviour
@@ -33,6 +34,16 @@ public class InteractionDetectorScript : MonoBehaviour
         {
             interactableInRange = null;
             interactionIcon.SetActive(false);
+        }
+
+        //si se sale del rango y sigue hablando que se calle
+        if (collision.CompareTag("NPC"))
+        {
+            NPCScript npc = collision.gameObject.GetComponent<NPCScript>();
+            if (npc.IsSpeaking)
+            {
+                npc.StopSpeaking();
+            }
         }
     }
 }

@@ -32,7 +32,12 @@ public class ChestScript : MonoBehaviour, IInteractable
     private void OpenChest()
     {
         SetOpened(true);
-        //DropItem
+
+        if (itemPrefab != null)
+        {
+            GameObject drop = Instantiate(itemPrefab, transform.position + Vector3.down, Quaternion.identity);
+            
+        }
     }
 
     public void SetOpened(bool opened)

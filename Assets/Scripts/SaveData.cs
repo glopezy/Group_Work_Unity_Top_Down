@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
+[System.Serializable]
 public class SaveData
 {
     //Aquí únicamente vamos a guardar los datos
@@ -12,4 +12,15 @@ public class SaveData
 
     //Aquí también guardaríamos el inventario y demás
     public List<InventorySaveData> inventorySaveData;
+
+    //cofres
+    public List<ChestSaveData> chestSaveData;
+
+}
+
+[System.Serializable]
+public class ChestSaveData
+{
+    public string chestID;
+    public bool isOpened;
 }

@@ -44,9 +44,11 @@ public class NPCScript : MonoBehaviour, IInteractable
         dialogue.SetActive(true);
     }
 
-    private void StopSpeaking()
+    public void StopSpeaking()
     {
         IsSpeaking=false;
         dialogue.SetActive(false);
     }
+
+    
 }
