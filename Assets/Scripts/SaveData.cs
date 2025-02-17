@@ -11,4 +11,5 @@ public class SaveData
     public string mapBoundary; //El nombre del límite del mapa
 
     //Aquí también guardaríamos el inventario y demás
+    public List<InventorySaveData> inventorySaveData;
 }
