@@ -32,6 +32,28 @@ public class InventoryController : MonoBehaviour
         //}
     }
 
+    public bool AddItem(GameObject itemPrefab)
+    {
+        //iterar slots
+        foreach (Transform slotTransform in inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+
+            //si está vacío metemos el objeto
+            if (slot != null && slot.currentItem == null)
+            {
+                GameObject newItem = Instantiate(itemPrefab, slotTransform);
+                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; 
+                slot.currentItem = newItem;
+                return true;
+            }
+        }
+
+        //si no hay slots disponibles pues na
+        return false;
+
+    }
+
     //getter y setter con truco!
 
     //Save
