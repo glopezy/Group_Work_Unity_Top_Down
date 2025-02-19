@@ -27,6 +27,9 @@ public class MapTransition : MonoBehaviour
             
             confiner.m_BoundingShape2D = mapBoundaries;
             UpdatePlayerPosition(collision.gameObject);
+
+            //Comprobamos que la instancia exista y pasamos el mapBoundary.name (por eso es importante que se llamen igual en ambos lados)
+            MapController.Instance?.HighlightedArea(mapBoundaries.name);
         }
 
 

@@ -70,6 +70,9 @@ public class SaveController : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").transform.position = saveData.playerPosition;
             FindObjectOfType<CinemachineConfiner>().m_BoundingShape2D = GameObject.Find(saveData.mapBoundary).GetComponent<PolygonCollider2D>();
 
+            //Comprobamos que la instancia exista y pasamos el mapBoundary
+            MapController.Instance?.HighlightedArea(saveData.mapBoundary);
+
             //inventario
             inventoryController.SetInventoryItems(saveData.inventorySaveData);
 
