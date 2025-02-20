@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour
 
         File.WriteAllText(saveLocation, JsonUtility.ToJson(newSaveData));
 
-        SceneManager.LoadScene("InitScene");
+        SceneManager.LoadScene("CutScene1");
     }
 
     public void Continue()
